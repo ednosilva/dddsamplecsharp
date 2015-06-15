@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EB08C70A-0003-4FEE-AB0D-3E42314CB23D}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. User Interface", "1. User Interface", "{D4644E59-C0D9-42AA-9EB0-231144E9A666}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Distributed Services", "2. Distributed Services", "{E0D47BC7-6340-4268-93BB-0F2D61E850FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Application", "3. Application", "{B1F67A5E-0403-46C7-9C8D-391E2D34D3D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Domain", "4. Domain", "{627EBCA7-B832-4EA2-B6CF-DCDD735F0102}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Infrastructure", "5. Infrastructure", "{936E10BF-5E03-40B5-814F-48AFCF946756}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 CrossCutting", "5.1 CrossCutting", "{51EAFF46-6683-49CC-B147-2D60F638F9A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 Data", "5.2 Data", "{14DAD79B-4874-47F8-8D5F-C7756FFF399A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.3 IoC", "5.3 IoC", "{D42C107E-DEB9-49F8-8DDA-2215EFDF1298}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossCutting.Resources", "src\CrossCutting.Resources\CrossCutting.Resources.csproj", "{FDD8DF1F-A071-4BB9-871F-0C1E4383A25F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Domain\Domain.csproj", "{9EC4EA5A-FB22-4336-8C56-02F378CD3DAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Tests", "test\Domain.Tests\Domain.Tests.csproj", "{F99E09F8-39C8-4E05-8093-D438B91DA5C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDD8DF1F-A071-4BB9-871F-0C1E4383A25F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDD8DF1F-A071-4BB9-871F-0C1E4383A25F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDD8DF1F-A071-4BB9-871F-0C1E4383A25F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDD8DF1F-A071-4BB9-871F-0C1E4383A25F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EC4EA5A-FB22-4336-8C56-02F378CD3DAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EC4EA5A-FB22-4336-8C56-02F378CD3DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EC4EA5A-FB22-4336-8C56-02F378CD3DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EC4EA5A-FB22-4336-8C56-02F378CD3DAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F99E09F8-39C8-4E05-8093-D438B91DA5C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F99E09F8-39C8-4E05-8093-D438B91DA5C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F99E09F8-39C8-4E05-8093-D438B91DA5C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F99E09F8-39C8-4E05-8093-D438B91DA5C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{51EAFF46-6683-49CC-B147-2D60F638F9A8} = {936E10BF-5E03-40B5-814F-48AFCF946756}
+		{14DAD79B-4874-47F8-8D5F-C7756FFF399A} = {936E10BF-5E03-40B5-814F-48AFCF946756}
+		{D42C107E-DEB9-49F8-8DDA-2215EFDF1298} = {936E10BF-5E03-40B5-814F-48AFCF946756}
+		{FDD8DF1F-A071-4BB9-871F-0C1E4383A25F} = {51EAFF46-6683-49CC-B147-2D60F638F9A8}
+		{9EC4EA5A-FB22-4336-8C56-02F378CD3DAC} = {627EBCA7-B832-4EA2-B6CF-DCDD735F0102}
+		{F99E09F8-39C8-4E05-8093-D438B91DA5C6} = {627EBCA7-B832-4EA2-B6CF-DCDD735F0102}
+	EndGlobalSection
+EndGlobal
