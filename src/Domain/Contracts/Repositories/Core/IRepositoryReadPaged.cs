@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestaoProblema.Domain.Contracts.Repositories.Core
+namespace BM.GestaoProblema.Domain.Contracts.Repositories.Core
 {
     //Princípio da Segregação de Interface.
     //Apenas o método de ler paginado.

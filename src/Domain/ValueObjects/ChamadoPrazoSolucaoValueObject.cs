@@ -1,11 +1,12 @@
-﻿using GestaoProblema.CrossCutting.Resources;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestaoProblema.Domain.ValueObjects
+using BM.GestaoProblema.Infra.CrossCutting.Resources;
+
+namespace BM.GestaoProblema.Domain.ValueObjects
 {
     //Objeto de valor prazo de solução que representa uma informação no chamado.
     public sealed class ChamadoPrazoSolucaoValueObject

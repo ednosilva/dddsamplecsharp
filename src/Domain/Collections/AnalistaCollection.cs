@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestaoProblema.Domain.Collections
+namespace BM.GestaoProblema.Domain.Collections
 {
     // Coleção de analistas
     public sealed class AnalistaCollection 

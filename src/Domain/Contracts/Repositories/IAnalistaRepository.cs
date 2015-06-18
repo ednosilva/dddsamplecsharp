@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestaoProblema.Domain.Contracts.Repositories
+namespace BM.GestaoProblema.Domain.Contracts.Repositories
 {
     //Repositório de Analista apenas com as funcionalidades necessárias
     public interface IAnalistaRepository :

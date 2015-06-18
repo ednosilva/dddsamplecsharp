@@ -1,18 +1,18 @@
-﻿using GestaoProblema.Domain.Entities;
-using GestaoProblema.Domain.ValueObjects;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 using BM.Validations;
-using GestaoProblema.Domain.Contracts.Repositories;
-using GestaoProblema.CrossCutting.Resources;
+using BM.GestaoProblema.Domain.Entities;
+using BM.GestaoProblema.Domain.ValueObjects;
+using BM.GestaoProblema.Domain.Contracts.Repositories;
+using BM.GestaoProblema.Infra.CrossCutting.Resources;
 
-namespace GestaoProblema.Domain.Services
+namespace BM.GestaoProblema.Domain.Services
 {
-    //Serviço responsável pelas ações dos usuários
+    //Serviço responsável pelas ações dos usuários.
     // referente à abertura, atendimento e finalização do chamado.
     public sealed class ControleChamadoDomainService : Contracts.Services.IControleChamadoDomainService
     {
@@ -27,7 +27,7 @@ namespace GestaoProblema.Domain.Services
             IChamadoRepository chamadoRepository,
             IAnalistaRepository analistaRepository)
         {
-            //Repasse da injeção
+            //Repasse da injeção.
             _sistemaRepository = sistemaRepository;
             _chamadoRepository = chamadoRepository;
             _analistaRepository = analistaRepository;

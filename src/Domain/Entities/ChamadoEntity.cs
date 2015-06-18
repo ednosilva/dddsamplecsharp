@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 using BM.Validations;
 
-using GestaoProblema.Domain.ValueObjects;
-using GestaoProblema.CrossCutting.Resources;
+using BM.GestaoProblema.Domain.ValueObjects;
+using BM.GestaoProblema.Infra.CrossCutting.Resources;
 
-namespace GestaoProblema.Domain.Entities
+namespace BM.GestaoProblema.Domain.Entities
 {
     //Entidade de chamado
     public sealed class ChamadoEntity : Core.Entity<Guid>
@@ -30,8 +30,6 @@ namespace GestaoProblema.Domain.Entities
             Prioridade = prioridade;
             //Status inicial
             Status = ChamadoStatusValueObject.Aberto;
-            //Definição do prazo
-            PrazoSolucao = new ChamadoPrazoSolucaoValueObject(prioridade);
         }
 
         //As propriedades estão como private set, pois apenas a própria classe
@@ -48,7 +46,19 @@ namespace GestaoProblema.Domain.Entities
         public SistemaEntity Sistema { get; private set; }
         public ChamadoStatusValueObject Status { get; private set; }
         public ChamadoPrioridadeValueObject Prioridade { get; private set; }
-        public ChamadoPrazoSolucaoValueObject PrazoSolucao { get; private set; }
+
+
+        private ChamadoPrazoSolucaoValueObject _prazoSolucao;
+        public ChamadoPrazoSolucaoValueObject PrazoSolucao
+        {
+            get
+            {
+                //Definição do prazo de solução
+                if (_prazoSolucao == null)
+                    _prazoSolucao = new ChamadoPrazoSolucaoValueObject(Prioridade);
+                return _prazoSolucao;
+            }
+        }
 
         //Funcionalidade do chamado para ser tratado por um analista
         public void ColocarEmAtendimento(AnalistaEntity analista)

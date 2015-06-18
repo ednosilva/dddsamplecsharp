@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestaoProblema.Domain.Collections.Core
+namespace BM.GestaoProblema.Domain.Collections.Core
 {
     /*
      * Foi criada uma base para as coleções, 

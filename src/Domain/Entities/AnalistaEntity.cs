@@ -1,12 +1,13 @@
-﻿using BM.Validations;
-using GestaoProblema.CrossCutting.Resources;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestaoProblema.Domain.Entities
+using BM.Validations;
+using BM.GestaoProblema.Infra.CrossCutting.Resources;
+
+namespace BM.GestaoProblema.Domain.Entities
 {
     //Entidade de analista
     public sealed class AnalistaEntity : Core.Entity<int>

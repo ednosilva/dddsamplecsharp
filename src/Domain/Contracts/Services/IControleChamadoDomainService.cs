@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using GestaoProblema.Domain.Entities;
-using GestaoProblema.Domain.ValueObjects;
+using BM.GestaoProblema.Domain.Entities;
+using BM.GestaoProblema.Domain.ValueObjects;
 
-namespace GestaoProblema.Domain.Contracts.Services
+namespace BM.GestaoProblema.Domain.Contracts.Services
 {
     //Serviço responsável pelas ações dos usuários
     // referente à abertura, atendimento e finalização do chamado.

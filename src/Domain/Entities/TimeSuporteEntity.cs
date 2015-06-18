@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 using BM.Validations;
-using GestaoProblema.CrossCutting.Resources;
-using GestaoProblema.Domain.Collections;
+using BM.GestaoProblema.Infra.CrossCutting.Resources;
+using BM.GestaoProblema.Domain.Collections;
 
-namespace GestaoProblema.Domain.Entities
+namespace BM.GestaoProblema.Domain.Entities
 {
     //Entidade de time de suporte
     public sealed class TimeSuporteEntity : Core.Entity<int>

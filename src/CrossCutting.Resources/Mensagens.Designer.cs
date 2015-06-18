@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GestaoProblema.CrossCutting.Resources {
+namespace BM.GestaoProblema.Infra.CrossCutting.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace GestaoProblema.CrossCutting.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GestaoProblema.CrossCutting.Resources.Mensagens", typeof(Mensagens).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BM.GestaoProblema.Infra.CrossCutting.Resources.Mensagens", typeof(Mensagens).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestaoProblema.Domain.ValueObjects
+namespace BM.GestaoProblema.Domain.ValueObjects
 {
     //Objeto de valor prioridade que representa uma informação no chamado.
     public enum ChamadoPrioridadeValueObject

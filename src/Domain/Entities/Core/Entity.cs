@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestaoProblema.Domain.Entities.Core
+namespace BM.GestaoProblema.Domain.Entities.Core
 {
     //Classe base para as entidades.
     //Para transformar uma classe em entidade, basta herdá-la.

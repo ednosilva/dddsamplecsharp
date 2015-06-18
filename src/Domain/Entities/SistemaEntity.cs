@@ -1,14 +1,14 @@
-﻿using GestaoProblema.Domain.Collections;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 using BM.Validations;
-using GestaoProblema.CrossCutting.Resources;
+using BM.GestaoProblema.Domain.Collections;
+using BM.GestaoProblema.Infra.CrossCutting.Resources;
 
-namespace GestaoProblema.Domain.Entities
+namespace BM.GestaoProblema.Domain.Entities
 {
     //Entidade de sistema
     public sealed class SistemaEntity : Core.Entity<int>
