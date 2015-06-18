@@ -1,14 +1,11 @@
-#DDD Sample CSharp
-Exemplo de uma arquitetura robusta aplicando os conceitos do Domain-Driven Design em C#.
-
-##Sobre o projeto
-Este projeto é um incentivo à utilização de uma arquitetura robusta com as boas práticas do DDD.
-
-##Grupo
-Foi iniciado um grupo no Facebook para tratarmos assuntos específicos de DDD.
-O link é: https://www.facebook.com/groups/DomainDrivenDesignBrasil/
-
-##TO DO
+# DDD Sample CSharp
+<p>Exemplo de uma arquitetura robusta aplicando os conceitos do Domain-Driven Design em C#.</p>
+## Sobre o projeto
+<p>Este projeto é um incentivo à utilização de uma arquitetura robusta com as boas práticas do DDD.</p>
+## Grupo
+<p>Foi iniciado um grupo no Facebook para tratarmos assuntos específicos de DDD.</p>
+<p>O link é: https://www.facebook.com/groups/DomainDrivenDesignBrasil/</p>
+## TO DO
 <ul>
   <li><strike>Domain</strike></li>
   <li><strike>Testes de Unidade do Domain</strike></li>
@@ -43,6 +40,5 @@ O link é: https://www.facebook.com/groups/DomainDrivenDesignBrasil/
   </ul>
   <li>...</li>
 </ul>
-
-##Sugestões
-Caso deseja enviar alguma sugestão do que ser feito ou do que pode ser melhorado, envie um e-mail para bruno.mantovani@live.com.
+## Sugestões
+<p>Caso deseja enviar alguma sugestão do que ser feito ou do que pode ser melhorado, envie um e-mail para bruno.mantovani@live.com.</p>
