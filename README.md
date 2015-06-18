@@ -17,7 +17,7 @@ O link é: https://www.facebook.com/groups/DomainDrivenDesignBrasil/
   <ul>
     <li><strike>Configuração do EF</strike></li>
     <li><strike>Repositório</strike></li>
-    <li>CrossCuttinIoC</li>
+    <li>CrossCutting</li>
     <ul>
       <li>IoC</li>
       <li>Autorização com ASP.NET Identity</li>
