@@ -17,7 +17,7 @@
     <li>CrossCutting</li>
     <ul>
       <li><strike>Resources</strike></li>
-      <li>IoC</li>
+      <li><strike>IoC</strike></li>
       <li>Autorização com ASP.NET Identity</li>
     </ul>
   </ul>
