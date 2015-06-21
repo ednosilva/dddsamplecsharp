@@ -15,7 +15,7 @@ namespace BM.GestaoProblema.Infra.Data.Contexts
     {
         #region Construtores
         public GestaoProblemaContext()
-            //Pega a conexão "GestaoProblema" do WebConfig
+            //Pega a conexão "GestaoProblema" do WebConfig/AppConfig
             // do projeto que está sendo executado.
             //Se for executar algum comando no console, é necessário ter
             // o projeto com a conexão "setado" como StartUp Project.

@@ -24,6 +24,6 @@ namespace BM.GestaoProblema.Domain.Entities.Core
         public virtual T Codigo { get; protected set; }
 
         //Foi criado uma data de criação desse objeto.
-        public virtual DateTime DataCriacao { get; protected set; }
+        public DateTime DataCriacao { get; protected set; }
     }
 }
