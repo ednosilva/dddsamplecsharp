@@ -67,6 +67,10 @@
       <Project>{9ec4ea5a-fb22-4336-8c56-02f378cd3dac}</Project>
       <Name>Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Infra.Data\Infra.Data.csproj">
+      <Project>{b2e31eb6-8a68-42a5-b3d0-8e50a100e4f4}</Project>
+      <Name>Infra.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
