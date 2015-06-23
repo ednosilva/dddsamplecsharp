@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using BM.GestaoProblema.Infra.Data.Extensions;
+
 namespace BM.GestaoProblema.Infra.Data.Repositories
 {
     //Repositório de Sistema.
@@ -29,6 +31,12 @@ namespace BM.GestaoProblema.Infra.Data.Repositories
         public void Add(Domain.Entities.SistemaEntity entity)
         {
             _context.SistemaEntities.Add(entity);
+            //O .SaveChanges() será executado no UnitOfWork.
+        }
+
+        public void Update(Domain.Entities.SistemaEntity entity)
+        {
+            _context.Update(entity);
             //O .SaveChanges() será executado no UnitOfWork.
         }
     }

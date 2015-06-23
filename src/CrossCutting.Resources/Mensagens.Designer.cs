@@ -61,6 +61,15 @@ namespace BM.GestaoProblema.Infra.CrossCutting.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to O analista está inválido.
+        /// </summary>
+        public static string AnalistaInvalido {
+            get {
+                return ResourceManager.GetString("AnalistaInvalido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to O analista não foi encontrado.
         /// </summary>
         public static string AnalistaNaoEncontrado {
@@ -102,6 +111,15 @@ namespace BM.GestaoProblema.Infra.CrossCutting.Resources {
         public static string ChamadoAnalistaEmAtendimentoInvalido {
             get {
                 return ResourceManager.GetString("ChamadoAnalistaEmAtendimentoInvalido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to O analista não pertence ao time de suporte responsável.
+        /// </summary>
+        public static string ChamadoAnalistaNaoPertenceAoTimeSuporteResponsavel {
+            get {
+                return ResourceManager.GetString("ChamadoAnalistaNaoPertenceAoTimeSuporteResponsavel", resourceCulture);
             }
         }
         
@@ -169,6 +187,15 @@ namespace BM.GestaoProblema.Infra.CrossCutting.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to O sistemsa está inválido.
+        /// </summary>
+        public static string SistemaInvalido {
+            get {
+                return ResourceManager.GetString("SistemaInvalido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to O sistema não foi encontrado.
         /// </summary>
         public static string SistemaNaoEncontrado {
@@ -201,6 +228,24 @@ namespace BM.GestaoProblema.Infra.CrossCutting.Resources {
         public static string TimeSuporteDescricaoInvalido {
             get {
                 return ResourceManager.GetString("TimeSuporteDescricaoInvalido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to O time de suporte está inválido.
+        /// </summary>
+        public static string TimeSuporteInvalido {
+            get {
+                return ResourceManager.GetString("TimeSuporteInvalido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to O time de suporte não foi encontrado.
+        /// </summary>
+        public static string TimeSuporteNaoEncontrado {
+            get {
+                return ResourceManager.GetString("TimeSuporteNaoEncontrado", resourceCulture);
             }
         }
         

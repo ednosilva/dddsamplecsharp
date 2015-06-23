@@ -69,6 +69,7 @@
     <Compile Include="Repositories\ChamadoRepository.cs" />
     <Compile Include="Repositories\SistemaRepository.cs" />
     <Compile Include="Repositories\TimeSuporteRepository.cs" />
+    <Compile Include="Extensions\DbContextExtension.cs" />
     <Compile Include="UnitsOfWork\GestaoProblemaContextUnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>

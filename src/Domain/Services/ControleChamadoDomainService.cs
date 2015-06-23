@@ -21,7 +21,7 @@ namespace BM.GestaoProblema.Domain.Services
         private readonly IChamadoRepository _chamadoRepository;
         private readonly IAnalistaRepository _analistaRepository;
 
-        //Construtor informando as dependências necessárias para trabalhar.
+        //Construtor informando as dependências necessárias para o funcionamento.
         public ControleChamadoDomainService(
             ISistemaRepository sistemaRepository,
             IChamadoRepository chamadoRepository,
@@ -38,6 +38,7 @@ namespace BM.GestaoProblema.Domain.Services
         {
             //Recupera o sitema:
             var sistema = _sistemaRepository.GetByCodigo(codigoSistema);
+
             //Valida se o mesmo existe:
             ValidatorHelper.GarantirNaoNulo(sistema, Mensagens.SistemaNaoEncontrado);
 
@@ -65,6 +66,9 @@ namespace BM.GestaoProblema.Domain.Services
 
             //Valida se o mesmo existe:
             ValidatorHelper.GarantirNaoNulo(analista, Mensagens.AnalistaNaoEncontrado);
+
+            //Valida se é do mesmo time do chamado:
+            ValidatorHelper.GarantirIgual(chamado.Sistema.CodigoTimeSuporte, analista.CodigoTimeSuporte, Mensagens.ChamadoAnalistaNaoPertenceAoTimeSuporteResponsavel);
 
             //Chama a funcionalidade de colocar em atendimento do objeto:
             chamado.ColocarEmAtendimento(analista);
@@ -95,7 +99,8 @@ namespace BM.GestaoProblema.Domain.Services
             return chamado;
         }
 
-        //Valida se o chamado não é nulo
+        //Valida se o chamado não é nulo.
+        //Método comum de validação de um chamado, evitando a replicação de código.
         private void GarantirChamadoEncontrado(ChamadoEntity chamado)
         {
             //Validação de negócio com o framework BM.Validations.

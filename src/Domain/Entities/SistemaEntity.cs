@@ -21,12 +21,9 @@ namespace BM.GestaoProblema.Domain.Entities
         {
             //Validação de negócio com o framework BM.Validations.
             ValidatorHelper.GarantirValorPreenchido(nome, Mensagens.SistemaNomeInvalido);
-            ValidatorHelper.GarantirNaoNulo(timeSuporte, Mensagens.SistemaTimeSuporteInvalido);
-
+            
             //Set das propriedades:
-            Nome = nome;
-            TimeSuporte = timeSuporte;
-            CodigoTimeSuporte = timeSuporte.Codigo;
+            Nome = nome;            
         }
 
         //As propriedades estão como private set, pois apenas a própria classe
@@ -35,5 +32,15 @@ namespace BM.GestaoProblema.Domain.Entities
 
         public int CodigoTimeSuporte { get; private set; }
         public TimeSuporteEntity TimeSuporte { get; private set; }
+
+        public void AlterarTimeSuporte(TimeSuporteEntity timeSuporte)
+        {
+            //Validação de negócio com o framework BM.Validations.
+            ValidatorHelper.GarantirNaoNulo(timeSuporte, Mensagens.SistemaTimeSuporteInvalido);
+
+            //Set das propriedades:
+            TimeSuporte = timeSuporte;
+            CodigoTimeSuporte = timeSuporte.Codigo;
+        }
     }
 }

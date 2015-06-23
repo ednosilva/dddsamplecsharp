@@ -57,7 +57,13 @@
     <Compile Include="Contracts\Repositories\IChamadoRepository.cs" />
     <Compile Include="Contracts\Repositories\ISistemaRepository.cs" />
     <Compile Include="Contracts\Repositories\ITimeSuporteRepository.cs" />
+    <Compile Include="Contracts\Services\Core\IAtualizarDomainService.cs" />
+    <Compile Include="Contracts\Services\Core\ICadastrarDomainService.cs" />
+    <Compile Include="Contracts\Services\Core\ITrocarTimeSuporte.cs" />
+    <Compile Include="Contracts\Services\IAnalistaDomainService.cs" />
     <Compile Include="Contracts\Services\IControleChamadoDomainService.cs" />
+    <Compile Include="Contracts\Services\ISistemaDomainService.cs" />
+    <Compile Include="Contracts\Services\ITimeSuporteDomainService.cs" />
     <Compile Include="Contracts\UnitsOfWork\Core\IUnitOfWork.cs" />
     <Compile Include="Contracts\UnitsOfWork\IGestaoProblemaContextUnitOfWork.cs" />
     <Compile Include="Entities\AnalistaEntity.cs" />
@@ -66,7 +72,10 @@
     <Compile Include="Entities\SistemaEntity.cs" />
     <Compile Include="Entities\TimeSuporteEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AnalistaDomainService.cs" />
     <Compile Include="Services\ControleChamadoDomainService.cs" />
+    <Compile Include="Services\SistemaDomainService.cs" />
+    <Compile Include="Services\TimeSuporteDomainService.cs" />
     <Compile Include="ValueObjects\ChamadoPrazoSolucaoValueObject.cs" />
     <Compile Include="ValueObjects\ChamadoPrioridadeValueObject.cs" />
     <Compile Include="ValueObjects\ChamadoStatusValueObject.cs" />

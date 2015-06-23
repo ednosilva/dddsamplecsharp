@@ -9,7 +9,8 @@ namespace BM.GestaoProblema.Domain.Contracts.Repositories
     //Repositório de Sistema apenas com as funcionalidades necessárias
     public interface ISistemaRepository :
         Core.IRepositoryReadSingle<Entities.SistemaEntity, int>,
-        Core.IRepositoryAdd<Entities.SistemaEntity, int>
+        Core.IRepositoryAdd<Entities.SistemaEntity, int>,
+        Core.IRepositoryUpdate<Entities.SistemaEntity, int>
     {
 
     }

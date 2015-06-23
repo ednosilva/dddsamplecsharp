@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AnalistaInvalido" xml:space="preserve">
+    <value>O analista está inválido</value>
+  </data>
   <data name="AnalistaNaoEncontrado" xml:space="preserve">
     <value>O analista não foi encontrado</value>
   </data>
@@ -131,6 +134,9 @@
   </data>
   <data name="ChamadoAnalistaEmAtendimentoInvalido" xml:space="preserve">
     <value>O analista em atendimento está inválido</value>
+  </data>
+  <data name="ChamadoAnalistaNaoPertenceAoTimeSuporteResponsavel" xml:space="preserve">
+    <value>O analista não pertence ao time de suporte responsável</value>
   </data>
   <data name="ChamadoEmAtendimento" xml:space="preserve">
     <value>O chamado foi colocado em atendimento às {0} por {1}</value>
@@ -153,6 +159,9 @@
   <data name="ChamadoSistemaInvalido" xml:space="preserve">
     <value>O sistema do chamado está inválido</value>
   </data>
+  <data name="SistemaInvalido" xml:space="preserve">
+    <value>O sistemsa está inválido</value>
+  </data>
   <data name="SistemaNaoEncontrado" xml:space="preserve">
     <value>O sistema não foi encontrado</value>
   </data>
@@ -164,6 +173,12 @@
   </data>
   <data name="TimeSuporteDescricaoInvalido" xml:space="preserve">
     <value>A descrição do time de suporte está inválido</value>
+  </data>
+  <data name="TimeSuporteInvalido" xml:space="preserve">
+    <value>O time de suporte está inválido</value>
+  </data>
+  <data name="TimeSuporteNaoEncontrado" xml:space="preserve">
+    <value>O time de suporte não foi encontrado</value>
   </data>
   <data name="TimeSuporteNomeInvalido" xml:space="preserve">
     <value>O nome do time de suporte está inválido</value>

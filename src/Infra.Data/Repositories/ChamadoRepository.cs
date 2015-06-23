@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using BM.GestaoProblema.Infra.Data.Extensions;
+
 namespace BM.GestaoProblema.Infra.Data.Repositories
 {
     //Repositório de Chamado.
@@ -34,7 +36,7 @@ namespace BM.GestaoProblema.Infra.Data.Repositories
 
         public void Update(Domain.Entities.ChamadoEntity entity)
         {
-            _context.Entry(entity).State = System.Data.Entity.EntityState.Modified;
+            _context.Update(entity);
             //O .SaveChanges() será executado no UnitOfWork.
         }
     }
