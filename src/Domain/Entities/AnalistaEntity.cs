@@ -18,15 +18,9 @@ namespace BM.GestaoProblema.Domain.Entities
         //Construtor informando o que é obrigatório para o analista existir.
         public AnalistaEntity(string nome, TimeSuporteEntity timeSuporte)
         {
-            //Validação de negócio com o framework BM.Validations.
-            ValidatorHelper.GarantirValorPreenchido(nome, Mensagens.AnalistaNomeInvalido);
-
-            //Validação e set da propriedade.
+            //Validação e sets das propriedades.
+            AlterarNome(nome);
             AlterarTimeSuporte(timeSuporte);
-
-            //Set das propriedades:
-            Nome = nome;
-            
         }
 
         //As propriedades estão como private set, pois apenas a própria classe
@@ -45,6 +39,15 @@ namespace BM.GestaoProblema.Domain.Entities
             //Set das propriedades:
             TimeSuporte = timeSuporte;
             CodigoTimeSuporte = timeSuporte.Codigo;
+        }
+
+        public void AlterarNome(string nome)
+        {
+            //Validação de negócio com o framework BM.Validations.
+            ValidatorHelper.GarantirValorPreenchido(nome, Mensagens.AnalistaNomeInvalido);
+
+            //Set das propriedades:
+            Nome = nome;
         }
     }
 }

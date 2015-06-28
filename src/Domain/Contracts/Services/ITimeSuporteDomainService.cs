@@ -12,6 +12,5 @@ namespace BM.GestaoProblema.Domain.Contracts.Services
         : Core.ICadastrarDomainService<Entities.TimeSuporteEntity, int>
         , Core.IAtualizarDomainService<Entities.TimeSuporteEntity, int>
     {
-
     }
 }

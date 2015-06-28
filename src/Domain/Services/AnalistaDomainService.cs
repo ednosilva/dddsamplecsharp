@@ -29,10 +29,24 @@ namespace BM.GestaoProblema.Domain.Services
         }
 
         //Cadastra um novo analista no sistema.
-        public void Cadastrar(Entities.AnalistaEntity entity)
+        public Entities.AnalistaEntity Cadastrar(string nome, int codigoTimeSuporte)
         {
-            ValidarAnalista(entity);
+            //Consulta o time de suporte.
+            var timeSuporte = 
+                _timeSuporteRepository.GetByCodigo(codigoTimeSuporte);
+
+            //Valida se foi encontrado.
+            ValidatorHelper.GarantirNaoNulo(timeSuporte, Mensagens.TimeSuporteNaoEncontrado);
+
+            //Cria a entidade.
+            var entity =
+                new Entities.AnalistaEntity(nome, timeSuporte);
+
+            //Adiciona a entidade no banco.
             _analistaRepository.Add(entity);
+
+            //Retorna a entidade já com o Codigo preenchido.
+            return entity;
         }
 
         //Atualiza um analista existente no sistema.
@@ -71,6 +85,6 @@ namespace BM.GestaoProblema.Domain.Services
         {
             //Validação de negócio com BM.Validations.
             ValidatorHelper.GarantirNaoNulo(analista, Mensagens.AnalistaInvalido);
-        }
+        }        
     }
 }
